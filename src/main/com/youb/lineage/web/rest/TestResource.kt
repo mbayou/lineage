@@ -5,6 +5,7 @@ import com.ftpix.sparknnotation.annotations.SparkGet
 import com.youb.lineage.ServiceRunner
 import com.youb.lineage.service.query.TestQueryService
 import com.youb.lineage.service.query.dto.test.TestDetailDto
+import com.youb.lineage.web.JsonTransformer
 import com.youb.lineage.web.rest.model.test.Test
 import javax.inject.Inject
 
@@ -23,8 +24,8 @@ class TestResource {
     }
 
 
-    @SparkGet("")
-    fun findTests(): List<Test> {
+    @SparkGet(value = "", transformer = JsonTransformer::class)
+    fun findTests(): MutableList<Test> {
         val testListDtos = testQueryService.findAllTests()
         val testList: MutableList<Test> = ArrayList()
 
