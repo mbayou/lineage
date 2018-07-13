@@ -42,6 +42,12 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.2'
     compile group: "com.ftpix", name: "sparknotation", version:"1.9"
     compile 'com.google.dagger:dagger:2.15'
+    compile 'org.hibernate.ogm:hibernate-ogm-core:5.3.1.Final'
+    compile 'org.hibernate.ogm:hibernate-ogm-mongodb:5.3.1.Final'
+    compile 'org.hibernate.ogm:hibernate-ogm-infinispan-embedded:5.3.1.Final'
+    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api'
+    compile 'org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec'
+
     apt 'com.google.dagger:dagger-compiler:2.15'
     kapt 'com.google.dagger:dagger-compiler:2.15'
 }
