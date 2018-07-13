@@ -10,9 +10,9 @@ import javax.inject.Singleton
 @Singleton
 class App {
 
-    var testResource: TestResource
+    private var testResource: TestResource
 
-    var authenticationResource: AuthenticationResource
+    private var authenticationResource: AuthenticationResource
 
     @Inject
     constructor(testResource: TestResource, authenticationResource: AuthenticationResource) {

@@ -32,7 +32,7 @@ kapt {
 }
 
 sourceSets {
-    main.kotlin.srcDirs += 'src/main'
+    main.kotlin.srcDirs += 'src/main/kotlin'
 }
 
 dependencies {
