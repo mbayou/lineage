@@ -1,6 +1,7 @@
 package com.youb.lineage.service.query.impl
 
 import com.youb.lineage.ServiceRunner
+import com.youb.lineage.persistence.dao.UserDao
 import com.youb.lineage.service.query.TestQueryService
 import com.youb.lineage.service.query.dto.test.TestDetailDto
 import javax.inject.Inject
@@ -8,6 +9,9 @@ import javax.inject.Singleton
 
 @Singleton
 class TestQueryServiceImpl : TestQueryService {
+
+    @Inject
+    lateinit var userDao: UserDao
 
     @Inject
     constructor()
