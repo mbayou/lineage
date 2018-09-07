@@ -37,6 +37,10 @@ cmake-build-*/
 # IntelliJ
 out/
 
+.DS_Store
+**/.DS_Store
+ObjectStore/
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
