@@ -5,4 +5,5 @@ import com.youb.lineage.persistence.domain.User
 interface UserDao {
 
     fun findById(): User
+    fun findAll(): List<User>
 }

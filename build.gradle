@@ -44,9 +44,11 @@ dependencies {
     compile 'com.google.dagger:dagger:2.15'
     compile 'org.hibernate.ogm:hibernate-ogm-core:5.3.1.Final'
     compile 'org.hibernate.ogm:hibernate-ogm-mongodb:5.3.1.Final'
-    compile 'org.hibernate.ogm:hibernate-ogm-infinispan-embedded:5.3.1.Final'
     compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api'
-    compile 'org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec'
+    testCompile group: 'org.jboss.jbossts', name: 'jbossjta', version: '4.16.4.Final'
+    compile group: 'org.jboss.narayana.jta', name: 'narayana-jta', version: '5.9.0.Final'
+    compile group: 'eu.infomas', name: 'annotation-detector', version: '3.0.5'
+
 
     apt 'com.google.dagger:dagger-compiler:2.15'
     kapt 'com.google.dagger:dagger-compiler:2.15'
