@@ -1,15 +1,16 @@
 package com.youb.lineage.persistence.domain
 
-import org.hibernate.annotations.GenericGenerator
+import org.hibernate.annotations.Type
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
 class User {
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Type(type = "objectid")
     lateinit var id: String
 }
